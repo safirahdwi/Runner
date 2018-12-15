@@ -14,9 +14,12 @@ public class Player : MonoBehaviour {
     
     public int health = 3;
     
+    //public GameObject effect;
+    
     //memberi batasan ketinggian movement
     private void Update()
     {
+		
 		if(health <= 0){
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
@@ -25,9 +28,11 @@ public class Player : MonoBehaviour {
         //movetowards membuat pergerakan smooth dengan kecepatan tertentu
         //deltatime digunakana untuk memastikan kecepatan pergerakannya sama untuk setiap komputer
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight) {
+			//Instantiate(effect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement); //pindah keatas
 
         } else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight) {
+			//Instantiate(effect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement); //pindahkebawah
 
         }

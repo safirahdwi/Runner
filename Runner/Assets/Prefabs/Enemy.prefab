@@ -70,6 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 5
+  effect: {fileID: 1796933733162946, guid: ed8947d7902056749b61cbdccf399b69, type: 2}
 --- !u!212 &212033213339969080
 SpriteRenderer:
   m_ObjectHideFlags: 1
