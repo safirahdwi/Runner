@@ -360,7 +360,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -375,8 +375,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c2fa7b75189094ca08360c534067b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1277087011626942, guid: 2f8fc8c147f3d8944a8cb6832312929f, type: 2}
-  startTimeBtwSpawn: 0.5
+  enemypattern:
+  - {fileID: 1242098468480972, guid: 6d62d3571cb82a7449358f0a1cbca615, type: 2}
+  - {fileID: 1511623407478236, guid: c4ac9be9ee6aac84b85904a958959a61, type: 2}
+  - {fileID: 1380722874488498, guid: be70bcf466c14564f8b9fd019afa558e, type: 2}
+  startTimeBtwSpawn: 1.25
+  decreaseTime: 0.05
+  minTime: 0.65
 --- !u!4 &624737612
 Transform:
   m_ObjectHideFlags: 0
