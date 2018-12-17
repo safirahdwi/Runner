@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
@@ -13,6 +14,12 @@ public class Player : MonoBehaviour {
     public float minHeight;
     
     public int health = 3;
+
+    public GameObject effect;
+    public Animator camAnim;
+    public Text healthDisplay;
+
+    public GameObject gameOver;
     
     //public GameObject effect;
     
@@ -20,8 +27,11 @@ public class Player : MonoBehaviour {
     private void Update()
     {
 		
-		if(health <= 0){
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        healthDisplay.text = health.ToString();
+
+		if(health <= 0){ 
+            gameOver.SetActive(true);
+			Destroy(gameObject);
 		}
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime); 
