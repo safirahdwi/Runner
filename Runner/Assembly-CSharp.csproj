@@ -53,25 +53,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Background.cs" />
-     <Compile Include="Assets\Scripts\Destroyer.cs" />
-     <Compile Include="Assets\Scripts\Obstacle.cs" />
-     <Compile Include="Assets\Scripts\ObstacleSpawn.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\Restart.cs" />
-     <Compile Include="Assets\Scripts\Score.cs" />
-     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\scr.cs" />
+     <Compile Include="Assets\Script\Enemy.cs" />
+     <Compile Include="Assets\Script\Player.cs" />
+     <Compile Include="Assets\Script\Repeatingbg.cs" />
+     <Compile Include="Assets\Script\Restart.cs" />
+     <Compile Include="Assets\Script\ScoreManager.cs" />
+     <Compile Include="Assets\Script\Spawner.cs" />
+     <Compile Include="Assets\Script\SpawnerPoint.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Runner/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Runner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Runner/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Runner/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Doc/dwi/Tugas sem5/Grafkom/Game/Endless/Runner/Runner/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
