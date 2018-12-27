@@ -21,6 +21,8 @@ public class Player : MonoBehaviour {
 
     public GameObject spawner;
     public GameObject restartDisplay;
+    
+    //public GameObject explosionSound;
 
     private void Update()
     {
@@ -31,7 +33,7 @@ public class Player : MonoBehaviour {
             restartDisplay.SetActive(true);
             Destroy(gameObject);
         }
-
+		
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 		//movetowards membuat pergerakan smooth dengan kecepatan tertentu
         //deltatime digunakan untuk memastikan kecepatan pergerakannya sama untuk setiap komputer
